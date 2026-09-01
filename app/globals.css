@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --font-sans: 'DM Sans', 'DM Sans Fallback';
+  --font-serif: 'DM Serif Display', 'DM Serif Display Fallback';
+  --font-mono: 'DM Mono', 'DM Mono Fallback';
+}
+
+:root {
+  color-scheme: light;
+  --background: oklch(0.975 0.012 85);
+  --foreground: oklch(0.22 0.035 245);
+  --card: oklch(0.995 0.006 85);
+  --card-foreground: oklch(0.22 0.035 245);
+  --primary: oklch(0.31 0.075 245);
+  --primary-foreground: oklch(0.98 0.01 85);
+  --secondary: oklch(0.91 0.03 160);
+  --secondary-foreground: oklch(0.24 0.05 155);
+  --muted: oklch(0.93 0.015 85);
+  --muted-foreground: oklch(0.48 0.03 245);
+  --accent: oklch(0.84 0.075 82);
+  --accent-foreground: oklch(0.22 0.035 245);
+  --border: oklch(0.86 0.025 245);
+  --radius: 0.75rem;
+}
+
+* { border-color: var(--border); }
+html { background: var(--background); scroll-behavior: smooth; }
+body { background: var(--background); color: var(--foreground); font-family: 'DM Sans', Arial, sans-serif; }
+::selection { background: oklch(0.84 0.075 82); color: oklch(0.22 0.035 245); }
