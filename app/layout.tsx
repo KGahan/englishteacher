@@ -8,7 +8,7 @@ const dmSerif = DM_Serif_Display({ subsets: ['latin'], weight: '400', variable: 
 const dmMono = DM_Mono({ subsets: ['latin'], weight: '400', variable: '--font-dm-mono' })
 
 export const metadata: Metadata = {
-  title: 'Elena Voss — English for real work',
+  title: 'Paul Gahan — English for real work',
   description: 'English teaching and communication courses for universities, professionals, and international teams.',
   generator: 'v0.app',
 }
